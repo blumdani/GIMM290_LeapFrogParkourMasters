@@ -4,7 +4,7 @@ GIMM 290
 
 Unity 5 Assignment - Leap Frog Parkour Masters
 
-Aside from the core instructions, there were a few bugfixes and alterations I wanted to make to the core gameplay. Then:
+Aside from the core instructions, there were a few bugfixes and alterations I wanted to make to the core gameplay. After those tweaks, the changes I made were:
 1. I wanted the character to jump high enough to cleanly jump over the other player, but not be super floaty. I decided I needed a large jumpforce but also a lot of gravity in order to jump high but come back down quickly enough.
 I adjusted the overall gravity in Edit -> Project Settings -> Physics to -100. Then adjusted my jumpForce variables on each character to be 130. I also made the walls transparent so the play field is easier to see.
 
