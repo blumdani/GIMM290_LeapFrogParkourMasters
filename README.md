@@ -17,3 +17,8 @@ skill elements to the gameplay. In this step, I also made it so that the scene a
 
 I liked keeping the constraint of having no back movement; I think it forces the characters to be more intentional with their movements. Along with this CONSTRAINT, GOALS and SKILL/CHALLENGE are the main game design elements I
 attempted to incorporate.
+
+
+UNITY ASSIGNMENT 6 UPDATES:
+I already covered most of this assignment in Unity Assignment 5, but I made a few minor changes (I scaled the canvas to screen size and used the rect transform to anchor the scores. I also changed the flashing text so that it flashes in one spot in the middle of the screen instead of replacing the player score text fields.).
+I kept my TextMeshPro objects because these are the preferred objects to use over the legacy Text objects outlined in the tutorial. I also made some other differences to my preferences, such as moving the Player Wins text to a spot not "exactly" in the middle of the screen, but where I found it aesthetically pleasing.
