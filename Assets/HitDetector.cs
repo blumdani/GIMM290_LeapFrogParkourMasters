@@ -7,6 +7,7 @@ public class HitDetector : MonoBehaviour
 {
     public TextMeshProUGUI player1ScoreText;
     public TextMeshProUGUI player2ScoreText;
+    public TextMeshProUGUI playerWinsText;
 
     private GameObject player1;
     private GameObject player2;
@@ -49,14 +50,16 @@ public class HitDetector : MonoBehaviour
 
                 if(player1Score >= 5)
                 {  
-                    player1ScoreText.text = "Player 1 Wins!!";
-                    player2ScoreText.text = "Player 1 Wins!!";
+                    player1ScoreText.text = "";
+                    player2ScoreText.text = "";
+                    playerWinsText.text = "Player 1 Wins!!";
                     StartCoroutine(FlashText());
                 }
                 else if(player2Score >= 5)
                 {
-                    player2ScoreText.text = "Player 2 Wins!!";
-                    player1ScoreText.text = "Player 2 Wins!!";
+                    player2ScoreText.text = "";
+                    player1ScoreText.text = "";
+                    playerWinsText.text = "Player 2 Wins!!";
                     StartCoroutine(FlashText());
                 }
             }
@@ -69,8 +72,7 @@ public class HitDetector : MonoBehaviour
         int textFlashes = 0;
         while(textFlashes <= 10)
         {
-            player1ScoreText.enabled = !player1ScoreText.enabled;
-            player2ScoreText.enabled = !player2ScoreText.enabled;
+            playerWinsText.enabled = !playerWinsText.enabled;
             yield return new WaitForSeconds(0.6f);
             textFlashes++;
         }
