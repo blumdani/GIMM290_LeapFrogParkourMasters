@@ -37,25 +37,25 @@ public class HitDetector : MonoBehaviour
 
                 if (other.gameObject == player1 && Time.time - lastScoreTimePlayer2 > scoreCooldown)
                 {
-                    player2Score++;
-                    player2ScoreText.text = "Player 2: " + player2Score;
+                    Managers.Score.ScoreUpdate(2);
+                    player2ScoreText.text = "Player 2: " + Managers.Score.ViewScore(2);
                     lastScoreTimePlayer2 = Time.time;
                 }
                 else if(other.gameObject == player2 && Time.time - lastScoreTimePlayer1 > scoreCooldown)
                 {
-                    player1Score++;
-                    player1ScoreText.text = "Player 1: " + player1Score;
+                    Managers.Score.ScoreUpdate(1);
+                    player1ScoreText.text = "Player 1: " + Managers.Score.ViewScore(1);
                     lastScoreTimePlayer1 = Time.time;
                 }
 
-                if(player1Score >= 5)
+                if(Managers.Score.ViewScore(1) >= 5)
                 {  
                     player1ScoreText.text = "";
                     player2ScoreText.text = "";
                     playerWinsText.text = "Player 1 Wins!!";
                     StartCoroutine(FlashText());
                 }
-                else if(player2Score >= 5)
+                else if(Managers.Score.ViewScore(2) >= 5)
                 {
                     player2ScoreText.text = "";
                     player1ScoreText.text = "";
@@ -79,8 +79,7 @@ public class HitDetector : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         canJump = true;
-        player1Score = 0;
-        player2Score = 0;
+        Managers.Score.ScoreReset();
     } 
     
 
