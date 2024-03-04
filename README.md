@@ -22,3 +22,12 @@ attempted to incorporate.
 UNITY ASSIGNMENT 6 UPDATES - 2/24/24:
 I already covered most of this assignment in Unity Assignment 5, but I made a few minor changes (I scaled the canvas to screen size and used the rect transform to anchor the scores. I also changed the flashing text so that it flashes in one spot in the middle of the screen instead of replacing the player score text fields.).
 I kept my TextMeshPro objects because these are the preferred objects to use over the legacy Text objects outlined in the tutorial. I also made some other differences to my preferences, such as moving the Player Wins text to a spot not "exactly" in the middle of the screen, but where I found it aesthetically pleasing.
+
+UNITY ASSIGNMENT 7 UPDATES - 3/3/24:
+The changes from the Unity 7 assignment have been made. The RelativeMovement script was difficult to incorporate because I made significant changes to my controller script, so I wound up adding the small RelativeMovement script changes to my existing script for collider pushes. 
+
+I added the managers, and included my own ScoreManager that managed holding, updating, resetting, and viewing scores. I implemented this into my HitDetector script and removed the existing score management in HitDetector.
+
+I added a Collectible: right now it is a placeholder that I'm referring to as "Health" in the Debug Console, but it has been implemented as a proof of concept. I've also adjusted the CollectibleItem script to only respond to collisions from one of the players (rather than any collision; I noticed a box could also trigger this collision).
+
+I also made some bugfixes around the way rotation was handled in my previous movement scripts: the movements are a lot more fluid now.
