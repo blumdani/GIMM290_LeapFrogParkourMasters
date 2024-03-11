@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 45.0f;
     public float turnSpeed = 100.0f; // Adjust to desired turn speed
-    public float jumpForce = 2.0f;
+    public float jumpForce = 65.0f;
     private bool isJumping = false;
     public float pushForce = 3.0f;
 
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         if (gameObject.name == "Player2")
         {
             //If someone has won but the game has not restarted yet, do not allow movement and rotate continuously.
-            if(!HitDetector.canJump) 
+            if(DepositFood.hasEnded == true) 
             {
                 transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
             }
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         else if (gameObject.name == "Player1")
         {
             //If someone has won but the game has not restarted yet, do not allow movement and rotate continuously.
-            if(!HitDetector.canJump) {
+            if(DepositFood.hasEnded == true) {
                 transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
             }
             else {

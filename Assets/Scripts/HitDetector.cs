@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HitDetector : MonoBehaviour
 {
-    public TextMeshProUGUI player1ScoreText;
+    /*public TextMeshProUGUI player1ScoreText;
     public TextMeshProUGUI player2ScoreText;
     public TextMeshProUGUI playerWinsText;
 
@@ -89,5 +89,5 @@ public class HitDetector : MonoBehaviour
         {
             isOver = false;
         }
-    }
+    }*/
 }

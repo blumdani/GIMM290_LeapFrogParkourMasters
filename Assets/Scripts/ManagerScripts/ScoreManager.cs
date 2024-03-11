@@ -7,7 +7,9 @@ public class ScoreManager : MonoBehaviour, IGameManager
     public ManagerStatus status {get; private set;}
 
     private int player1Score = 0;
-    private int player2Score = 1;   
+    private int player2Score = 0;
+    private int player1HeldFood = 0;
+    private int player2HeldFood = 0;  
 
     public void Startup() {
 		Debug.Log("Score manager starting...");
@@ -49,5 +51,42 @@ public class ScoreManager : MonoBehaviour, IGameManager
     public void ScoreReset() {
         player1Score = 0;
         player2Score = 0;
+        player1HeldFood = 0;
+        player2HeldFood = 0;
+    }
+
+    public void HeldFoodReset(int playerNumber) {
+        if(playerNumber == 1)
+        {
+            player1HeldFood = 0;
+        }
+        else
+        {
+            player2HeldFood = 0;
+        }
+    }
+
+    public int ViewHeldFood(int playerNumber)
+    {
+        if(playerNumber == 1)
+        {
+            return player1HeldFood;
+        }
+        else
+        {
+            return player2HeldFood;
+        }
+    }
+
+    public void HeldFoodUpdate(int playerNumber)
+    {
+        if(playerNumber == 1)
+        {
+            player1HeldFood++;
+        }
+        else if(playerNumber == 2)
+        {
+            player2HeldFood++;
+        }
     }
 }
