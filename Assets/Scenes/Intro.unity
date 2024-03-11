@@ -937,13 +937,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: "The squirrel awoke groggily; he yawned and stretched, marking the end
     of a satisfying slumber. However, his peaceful bliss quickly turned to panic
-    as his senses fully returned to him. He looked over at his alarm clock; he had
-    set it for 8PM, not AM!! \n\n He darted out of bed and ran into the forest. Winter
+    as his senses returned to him. He looked over at his alarm clock; he had set
+    it for 8PM, not AM!! \n\nHe darted out of bed and ran into the forest. Winter
     was coming soon, and he needed to stock up on food. All the normal spots had
     been picked clean; the other squirrels nestled into their homes, their food storage
-    full. His worry grew with every empty area he found in his frantic search. \n\n
-    Finally, he came to a clearing that was ripe for scavenging. Unfortunately, he
-    was not the only one still looking for Winter sustenance..."
+    full. His worry grew with every empty area he found in his frantic search. \n\nFinally,
+    he came to a clearing that was ripe for scavenging. Unfortunately, he was not
+    the only one still looking for Winter sustenance..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
