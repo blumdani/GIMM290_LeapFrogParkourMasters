@@ -31,3 +31,13 @@ I added the managers, and included my own ScoreManager that managed holding, upd
 I added a Collectible: right now it is a placeholder that I'm referring to as "Health" in the Debug Console, but it has been implemented as a proof of concept. I've also adjusted the CollectibleItem script to only respond to collisions from one of the players (rather than any collision; I noticed a box could also trigger this collision).
 
 I also made some bugfixes around the way rotation was handled in my previous movement scripts: the movements are a lot more fluid now.
+
+
+UNITY ASSIGNMENT 8 UPDATES - 3/10/24:
+For this assignment, I changed the goal of the game. I leaned into the idea of collectibles, and wanted a race between two players to gather collectibles as quickly as possible. I added an intro scene with story and instructions to help give the game some context and a backstory. I also (slightly) themed the level to reflect this new backstory. 
+
+The new goal is to hoard food in a forest before your opponent can. I focused on making this fairly skill-based; the player must be able to get to food quicker than their opponent, and also know when to go for another piece of food and when to store food. Food randomly spawns on the map, so there is also some chance involved. Feasibly, one player could have a much easier time if the food spawned in certain spots favorable to that player.
+
+I also made a few general updates, including handling a few minor bug fixes. I added a restart button so that players could play multiple rounds, if desired.
+
+If I'd had more time to work on this, I think it would have been fun to come up with some kind of way for players to attack each other and steal unbanked food. This might be something to consider in future versions of the game.
