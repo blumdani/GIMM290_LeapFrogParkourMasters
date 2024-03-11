@@ -3338,7 +3338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 45
-  turnSpeed: 100
+  turnSpeed: 150
   jumpForce: 65
   pushForce: 3
 --- !u!54 &1342757013
@@ -5506,7 +5506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 45
-  turnSpeed: 100
+  turnSpeed: 150
   jumpForce: 65
   pushForce: 3
 --- !u!54 &1999943256
